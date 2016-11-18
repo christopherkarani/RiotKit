@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ChampionRequest Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/ChampionRequest" class="dashAnchor"></a>
+    <a title="ChampionRequest Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (91% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        ChampionRequest Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/ChampionRequest.html">ChampionRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration.html">Configuration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Configuration.html#/s:VC7RiotKit13Configuration6config">– config</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Region.html">Region</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RiotRequest.html">RiotRequest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:v7RiotKit8apiRouteSS">apiRoute</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:F7RiotKit7findKeyFT8forValueSi14withDictionaryGVs10DictionarySSSi__GSqSS_">findKey(forValue:withDictionary:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Champion.html">Champion</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>ChampionRequest</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">ChampionRequest</span></code></pre>
+
+                </div>
+              </div>
+            <p>A class responsible for the querying and fetching of <code><a href="../Structs/Champion.html">Champion</a></code>&rsquo;s.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC7RiotKit15ChampionRequest11championMapGVs10DictionarySSSi_"></a>
+                    <a name="//apple_ref/swift/Variable/championMap" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC7RiotKit15ChampionRequest11championMapGVs10DictionarySSSi_">championMap</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Champion mappings, name <code>String</code> -&gt; id <code>Int</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">championMap</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">]()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC7RiotKit15ChampionRequest16championImageMapGVs10DictionarySiSS_"></a>
+                    <a name="//apple_ref/swift/Variable/championImageMap" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC7RiotKit15ChampionRequest16championImageMapGVs10DictionarySiSS_">championImageMap</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Champion image mappings, id <code>Int</code> -&gt; <code>String</code> filename.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">championImageMap</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC7RiotKit15ChampionRequest9championsGVs10DictionarySiVS_8Champion_"></a>
+                    <a name="//apple_ref/swift/Variable/champions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC7RiotKit15ChampionRequest9championsGVs10DictionarySiVS_8Champion_">champions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A dictionary of <code><a href="../Structs/Champion.html">Champion</a></code> structs, using the champion id as the key.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">champions</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">:</span> <span class="kt"><a href="../Structs/Champion.html">Champion</a></span><span class="p">]()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC7RiotKit15ChampionRequestcFT_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC7RiotKit15ChampionRequestcFT_S0_">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches the latest <code><a href="../Structs/Champion.html">Champion</a></code> set</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC7RiotKit15ChampionRequest11getChampionFT7usingIDSi_VS_8Champion"></a>
+                    <a name="//apple_ref/swift/Method/getChampion(usingID:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC7RiotKit15ChampionRequest11getChampionFT7usingIDSi_VS_8Champion">getChampion(usingID:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Looks up the <code><a href="../Structs/Champion.html">Champion</a></code> <code>struct</code> for the specified identifier.</p>
+
+<p><li><p>Parameters:</p></p>
+
+<p><ul>
+<li>id: the champion identifier</li>
+</ul></li>
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    <p>A <code><a href="../Structs/Champion.html">Champion</a></code> struct, for the specified champion.</p></p>
+
+<p></div></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getChampion</span><span class="p">(</span><span class="n">usingID</span> <span class="nv">id</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Champion.html">Champion</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>id</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the champion identifier</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code><a href="../Structs/Champion.html">Champion</a></code> struct, for the specified champion.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC7RiotKit15ChampionRequest11getChampionFT9usingNameSS_VS_8Champion"></a>
+                    <a name="//apple_ref/swift/Method/getChampion(usingName:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC7RiotKit15ChampionRequest11getChampionFT9usingNameSS_VS_8Champion">getChampion(usingName:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Looks up the <code><a href="../Structs/Champion.html">Champion</a></code> <code>struct</code> for the specified name.</p>
+
+<p><li>Parameters:</li>
+<li><p>championName: the champion name</p></li>
+<div class="aside aside-returns">
+    <p class="aside-title">Returns</p>
+    <p>A <code><a href="../Structs/Champion.html">Champion</a></code> struct, for the specified champion.</p></p>
+
+<p></div></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getChampion</span><span class="p">(</span><span class="n">usingName</span> <span class="nv">championName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Champion.html">Champion</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A <code><a href="../Structs/Champion.html">Champion</a></code> struct, for the specified champion.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC7RiotKit15ChampionRequest17getChampionImagesFT21withCompletionHandlerFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/getChampionImages(withCompletionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC7RiotKit15ChampionRequest17getChampionImagesFT21withCompletionHandlerFT_T__T_">getChampionImages(withCompletionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>For all previously obtained champions, fetch the image from the dragon endpoint.</p>
+
+<ul>
+<li>Parameters:
+
+<ul>
+<li>handler: the completion handler to be executed once complete.</li>
+</ul></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getChampionImages</span><span class="p">(</span><span class="n">withCompletionHandler</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion handler to be executed once complete.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC7RiotKit15ChampionRequest15getChampionListFT10withImagesSb21withCompletionHandlerFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/getChampionList(withImages:withCompletionHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC7RiotKit15ChampionRequest15getChampionListFT10withImagesSb21withCompletionHandlerFT_T__T_">getChampionList(withImages:withCompletionHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches the full list of champions from the static API endpoint.</p>
+
+<ul>
+<li>Parameters:
+
+<ul>
+<li>shouldFetchImages: whether or not to automatically fetch the champion images. Defaults to <code>false</code>.</li>
+<li>handler: the completion handler to be executed once complete.</li>
+</ul></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getChampionList</span><span class="p">(</span><span class="n">withImages</span> <span class="nv">shouldFetchImages</span><span class="p">:</span><span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span> <span class="n">withCompletionHandler</span> <span class="nv">handler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>shouldFetchImages</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>whether or not to automatically fetch the champion images. Defaults to <code>false</code>.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the completion handler to be executed once complete.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-11-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
