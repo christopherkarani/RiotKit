@@ -64,7 +64,7 @@ open class ChampionRequest {
          Looks up the `Champion` `struct` for the specified name.
          
          - Parameters:
-         - championName: the champion name
+            - championName: the champion name
          
          - Returns: A `Champion` struct, for the specified champion.
      */
@@ -110,6 +110,14 @@ open class ChampionRequest {
     }
     
     
+    /**
+        Using the large `JSON` object of a champion, constructs multiple champion data structs, linking them
+     
+        - Parameters:
+            - json_blob: the champion `JSON` blob..
+        
+        - Returns: A `ChampionData` struct, for the given champion `JSON` blob.
+     */
     private static func buildChampionData(withJSON json_blob:JSON) -> ChampionData?
     {
         //Create image data

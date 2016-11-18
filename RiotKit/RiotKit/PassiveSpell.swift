@@ -8,9 +8,14 @@
 
 import Foundation
 
+/// `PassiveSpell` struct, containing data concerning the champion's passive spell
 public struct PassiveSpell {
+    /// The sanitized description of the spell
     public let sanitizedDescription: String;
+    /// The pure description of the spell
     public let description: String;
+    /// The name of the spell
     public let name: String;
+    /// The image data of the spell, linked struct
     public let image: ImageData;
 }

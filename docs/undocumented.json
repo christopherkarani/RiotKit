@@ -1,6 +1,13 @@
 {
   "warnings": [
     {
+      "file": "/Users/gdouglas/Projects/RiotKit/RiotKit/RiotKit/ChampionSpell.swift",
+      "line": 456,
+      "symbol": "ChampionSpell",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/gdouglas/Projects/RiotKit/RiotKit/RiotKit/Configuration.swift",
       "line": 28,
       "symbol": "Configuration.config.proxyURL",
