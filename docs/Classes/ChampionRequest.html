@@ -14,7 +14,7 @@
     <a title="ChampionRequest Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (91% documented)</p>
+        <p><a href="../index.html"> Docs</a> (95% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -69,6 +69,21 @@
               <li class="nav-group-task">
                 <a href="../Structs/Champion.html">Champion</a>
               </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ChampionData.html">ChampionData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ChampionInfo.html">ChampionInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ChampionStats.html">ChampionStats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ImageData.html">ImageData</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PassiveSpell.html">PassiveSpell</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -119,9 +134,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:ZvC7RiotKit15ChampionRequest16championImageMapGVs10DictionarySiSS_"></a>
-                    <a name="//apple_ref/swift/Variable/championImageMap" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZvC7RiotKit15ChampionRequest16championImageMapGVs10DictionarySiSS_">championImageMap</a>
+                    <a name="/s:ZvC7RiotKit15ChampionRequest15championDataMapGVs10DictionarySiVS_12ChampionData_"></a>
+                    <a name="//apple_ref/swift/Variable/championDataMap" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC7RiotKit15ChampionRequest15championDataMapGVs10DictionarySiVS_12ChampionData_">championDataMap</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -129,14 +144,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Champion image mappings, id <code>Int</code> -&gt; <code>String</code> filename.</p>
+                        <p>Champion data mappings, id <code>Int</code> -&gt; <code><a href="../Structs/ChampionData.html">ChampionData</a></code> filename.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">championImageMap</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]()</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">championDataMap</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt"><a href="../Structs/ChampionData.html">ChampionData</a></span><span class="p">]()</span></code></pre>
 
                         </div>
                       </div>
@@ -275,8 +290,11 @@
                       <div class="abstract">
                         <p>Looks up the <code><a href="../Structs/Champion.html">Champion</a></code> <code>struct</code> for the specified name.</p>
 
-<p><li>Parameters:</li>
-<li><p>championName: the champion name</p></li>
+<p><li><p>Parameters:</p></p>
+
+<p><ul>
+<li>championName: the champion name</li>
+</ul></li>
 <div class="aside aside-returns">
     <p class="aside-title">Returns</p>
     <p>A <code><a href="../Structs/Champion.html">Champion</a></code> struct, for the specified champion.</p></p>
@@ -291,6 +309,26 @@
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getChampion</span><span class="p">(</span><span class="n">usingName</span> <span class="nv">championName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Champion.html">Champion</a></span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>championName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the champion name</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                       <div>
                         <h4>Return Value</h4>

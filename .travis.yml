@@ -1,12 +1,12 @@
 language: objective-c
 
 xcode_workspace: RiotKit.xcworkspace
-xcode_scheme: RiotKitTests
+xcode_scheme: RiotKit
 osx_image: xcode8.2
 xcode_sdk: iphonesimulator9.1
 
 script:
-  - xcodebuild -workspace RiotKit/RiotKit.xcworkspace -scheme RiotKitTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' clean build test
+  - xcodebuild -workspace RiotKit/RiotKit.xcworkspace -scheme RiotKit -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' clean build test
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -J 'RiotKit'
