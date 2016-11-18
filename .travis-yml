@@ -3,7 +3,7 @@ language: swift
 xcode_workspace: RiotKit.xcworkspace
 xcode_scheme: RiotKitTests
 osx_image: xcode8.2
-xcode_sdk: iphonesimulator9.3
+xcode_sdk: iphonesimulator9.1
 
 script:
 - xcodebuild -workspace RiotKit/RiotKit.xcworkspace -scheme SwifternalizationTests -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6S,OS=9.1' clean build test
