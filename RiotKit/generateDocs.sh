@@ -1,2 +1,2 @@
 #!/bin/sh
-jazzy -o ../Docs --min-acl internal --skip-undocumented
+jazzy -o ../docs --min-acl internal --skip-undocumented
