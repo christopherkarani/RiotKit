@@ -1,0 +1,25 @@
+before_script:
+  - sudo gem install xcov
+
+stages:
+  - build
+  - coverage
+
+build_project:
+  stage: build
+  script:
+    - xcodebuild clean -workspace RiotKit/RiotKit.xcworkspace -scheme RiotKit | xcpretty
+    - xcodebuild test -workspace RiotKit/RiotKit.xcworkspace  -scheme RiotKit -destination 'platform=iOS Simulator,id=D0E2AED9-2FEA-4E16-B325-32B81272983D' | xcpretty -s
+  tags:
+    - osx
+
+build_coverage:
+  stage: coverage
+  allow_failure: yes
+  script:
+    - xcov -w RiotKit/RiotKit.xcworkspace -s RiotKit
+  artifacts:
+    paths:
+    - xcov_report/
+  tags:
+    - osx
