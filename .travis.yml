@@ -1,4 +1,4 @@
-language: swift
+language: objective-c
 
 xcode_workspace: RiotKit.xcworkspace
 xcode_scheme: RiotKitTests
