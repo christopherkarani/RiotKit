@@ -1,20 +1,10 @@
 # RiotKit
 
-![Build Status](https://git.hexplo.it/RiotKit/RiotKit/badges/develop/build.svg) [![coverage report](https://git.hexplo.it/RiotKit/RiotKit/badges/develop/coverage.svg)](https://git.hexplo.it/RiotKit/RiotKit/commits/develop)
+[![Build Status](https://travis-ci.org/RiotKit/RiotKit.svg?branch=master)](https://travis-ci.org/RiotKit/RiotKit)
+[![codecov.io](https://codecov.io/gh/RiotKit/RiotKit/branch/master/graphs/badge.svg)](https://codecov.io/gh/RiotKit/RiotKit/branch/master)
 
 RiotKit is a Swift framework written to server as a wrapper around the Riot Games API.
 The API provides access into many of the League of Legends stats/game information including player details and match history.
-
-## Tasklist 
-
-- [ ] Champions
-- [ ] Summoner
-- [ ] Champion Mastery
-- [ ] Matches
-- [ ] Match Data
-- [ ] API Status
-- [ ] Callbacks/Protocol for parent apps
-- [ ] Ranks/Leagues
 
 
 For example, champion data is now pulled, and populated into an array of [Champion](RiotKit/RiotKit/Champion.swift) structs:-
