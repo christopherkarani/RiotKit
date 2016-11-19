@@ -4,7 +4,7 @@
 [![codecov.io](https://codecov.io/gh/RiotKit/RiotKit/branch/master/graphs/badge.svg)](https://codecov.io/gh/RiotKit/RiotKit/branch/master)
 [![Twitter](https://img.shields.io/badge/twitter-@Hexploitable-blue.svg?style=flat)](http://twitter.com/Hexploitable)
 
-RiotKit is a Swift framework written to server as a wrapper around the Riot Games API.
+RiotKit is a Swift framework written to serve as a wrapper around the Riot Games API.
 The API provides access into many of the League of Legends stats/game information including player details and match history.
 
 
