@@ -4,6 +4,7 @@
 [![codecov.io](https://codecov.io/gh/RiotKit/RiotKit/branch/master/graphs/badge.svg)](https://codecov.io/gh/RiotKit/RiotKit/branch/master)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-FF0000.svg?style=flat)](https://github.com/RiotKit/RiotKit/blob/master/LICENSE)
 [![GitHub version](https://badge.fury.io/gh/RiotKit%2FRiotKit.svg?style=flat)](https://badge.fury.io/gh/RiotKit%2FRiotKit)
+[![Documentation](http://docstatus.riotkit.xyz/)](https://riotkit.github.io/RiotKit/)
 [![Twitter](https://img.shields.io/badge/twitter-@Hexploitable-0099FF.svg?style=flat)](http://twitter.com/Hexploitable)
 [![Discord][discord-badge]][discord]
 
