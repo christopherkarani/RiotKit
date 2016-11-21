@@ -114,7 +114,7 @@
 			children = (
 				93A51B431C99F91300F9ACA0 /* Configuration.swift */,
 			);
-			name = Configuration;
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		93208B301DDA5CE000875162 /* Utils */ = {
@@ -122,7 +122,7 @@
 			children = (
 				93EC7A141DD684C90035DF3C /* Utils.swift */,
 			);
-			name = Utils;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		93525FD61DCE5E7E00A946F4 /* Model */ = {
@@ -137,7 +137,7 @@
 				9352BBE51DDA69FB002005F4 /* Champions */,
 				9352BBE41DDA69F5002005F4 /* Regions */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		93525FD71DCE5F3F00A946F4 /* Controller */ = {
@@ -150,7 +150,7 @@
 				9352BBDE1DDA6956002005F4 /* Champions */,
 				935DB08E1DD7C57300133C01 /* RiotRequest.swift */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		9352BBDE1DDA6956002005F4 /* Champions */ = {
@@ -158,35 +158,35 @@
 			children = (
 				93525FD81DCE5F7B00A946F4 /* ChampionRequest.swift */,
 			);
-			name = Champions;
+			path = Champions;
 			sourceTree = "<group>";
 		};
 		9352BBE01DDA6966002005F4 /* Matches */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Matches;
+			path = Matches;
 			sourceTree = "<group>";
 		};
 		9352BBE11DDA6973002005F4 /* Summoner */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Summoner;
+			path = Summoner;
 			sourceTree = "<group>";
 		};
 		9352BBE21DDA697F002005F4 /* Status */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Status;
+			path = Status;
 			sourceTree = "<group>";
 		};
 		9352BBE31DDA69D0002005F4 /* Leagues */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Leagues;
+			path = Leagues;
 			sourceTree = "<group>";
 		};
 		9352BBE41DDA69F5002005F4 /* Regions */ = {
@@ -194,7 +194,7 @@
 			children = (
 				93A51B451C99FA4300F9ACA0 /* Region.swift */,
 			);
-			name = Regions;
+			path = Regions;
 			sourceTree = "<group>";
 		};
 		9352BBE51DDA69FB002005F4 /* Champions */ = {
@@ -205,35 +205,35 @@
 				B2808C2B1DDF531400DE1140 /* ChampionInfo.swift */,
 				B2808C341DDF566200DE1140 /* ChampionStats.swift */,
 			);
-			name = Champions;
+			path = Champions;
 			sourceTree = "<group>";
 		};
 		9352BBE61DDA6A06002005F4 /* Matches */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Matches;
+			path = Matches;
 			sourceTree = "<group>";
 		};
 		9352BBE71DDA6A0C002005F4 /* Summoners */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Summoners;
+			path = Summoners;
 			sourceTree = "<group>";
 		};
 		9352BBE81DDA6A11002005F4 /* Status */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Status;
+			path = Status;
 			sourceTree = "<group>";
 		};
 		9352BBE91DDA6A18002005F4 /* Leagues */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Leagues;
+			path = Leagues;
 			sourceTree = "<group>";
 		};
 		93A51B1D1C99F80200F9ACA0 = {
@@ -298,7 +298,7 @@
 				B2808C301DDF544600DE1140 /* PassiveSpell.swift */,
 				B2808C321DDF54F700DE1140 /* ChampionSpell.swift */,
 			);
-			name = Spells;
+			path = Spells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
