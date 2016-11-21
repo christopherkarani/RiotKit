@@ -12,6 +12,8 @@
 		93059F681DDBB77B00BDCA07 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93059F671DDBB77B00BDCA07 /* AlamofireImage.framework */; };
 		93525FD91DCE5F7B00A946F4 /* ChampionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93525FD81DCE5F7B00A946F4 /* ChampionRequest.swift */; };
 		935DB08F1DD7C57300133C01 /* RiotRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935DB08E1DD7C57300133C01 /* RiotRequest.swift */; };
+		938DDCC01DE3B1870021454D /* SummonerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DDCBF1DE3B1870021454D /* SummonerRequest.swift */; };
+		938DDCC21DE3B3BA0021454D /* SummonerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DDCC11DE3B3BA0021454D /* SummonerTests.swift */; };
 		93A0036C1DD8A43B0092026E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A0036B1DD8A43B0092026E /* SwiftyJSON.framework */; };
 		93A51B2B1C99F80200F9ACA0 /* RiotKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 93A51B2A1C99F80200F9ACA0 /* RiotKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93A51B321C99F80200F9ACA0 /* RiotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A51B271C99F80200F9ACA0 /* RiotKit.framework */; };
@@ -49,6 +51,8 @@
 		93059F671DDBB77B00BDCA07 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = "../../../../Library/Developer/Xcode/DerivedData/RiotKit-eggyogtlouakvseymwbsfrepayor/Build/Products/Debug-iphonesimulator/AlamofireImage/AlamofireImage.framework"; sourceTree = "<group>"; };
 		93525FD81DCE5F7B00A946F4 /* ChampionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionRequest.swift; sourceTree = "<group>"; };
 		935DB08E1DD7C57300133C01 /* RiotRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RiotRequest.swift; sourceTree = "<group>"; };
+		938DDCBF1DE3B1870021454D /* SummonerRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummonerRequest.swift; sourceTree = "<group>"; };
+		938DDCC11DE3B3BA0021454D /* SummonerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummonerTests.swift; sourceTree = "<group>"; };
 		93A0036B1DD8A43B0092026E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/RiotKit-eggyogtlouakvseymwbsfrepayor/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		93A51B271C99F80200F9ACA0 /* RiotKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RiotKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A51B2A1C99F80200F9ACA0 /* RiotKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RiotKit.h; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 		9352BBE11DDA6973002005F4 /* Summoner */ = {
 			isa = PBXGroup;
 			children = (
+				938DDCBF1DE3B1870021454D /* SummonerRequest.swift */,
 			);
 			path = Summoner;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 				93A51B361C99F80200F9ACA0 /* RiotKitTests.swift */,
 				93B414C01DDD0C8C00C6B44C /* UtilsTests.swift */,
 				93FA32341C9DDAF40078C27D /* ChampionTests.swift */,
+				938DDCC11DE3B3BA0021454D /* SummonerTests.swift */,
 				93FA32321C9DD5F40078C27D /* RegionTests.swift */,
 				93A51B381C99F80200F9ACA0 /* Info.plist */,
 				93FA32361C9DDB3C0078C27D /* ConfigurationTests.swift */,
@@ -454,6 +460,7 @@
 				93A51B481C9A02C100F9ACA0 /* Champion.swift in Sources */,
 				93A51B461C99FA4300F9ACA0 /* Region.swift in Sources */,
 				B2808C2E1DDF538C00DE1140 /* ImageData.swift in Sources */,
+				938DDCC01DE3B1870021454D /* SummonerRequest.swift in Sources */,
 				93525FD91DCE5F7B00A946F4 /* ChampionRequest.swift in Sources */,
 				93A51B441C99F91300F9ACA0 /* Configuration.swift in Sources */,
 				93A51B421C99F8A000F9ACA0 /* RiotKit.swift in Sources */,
@@ -472,6 +479,7 @@
 				93FA32371C9DDB3C0078C27D /* ConfigurationTests.swift in Sources */,
 				93B414C11DDD0C8C00C6B44C /* UtilsTests.swift in Sources */,
 				93FA32331C9DD5F40078C27D /* RegionTests.swift in Sources */,
+				938DDCC21DE3B3BA0021454D /* SummonerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

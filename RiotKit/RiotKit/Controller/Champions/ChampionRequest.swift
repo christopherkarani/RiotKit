@@ -8,7 +8,6 @@
 
 import Foundation
 import SwiftyJSON
-import os
 
 
 /// A class responsible for the querying and fetching of `Champion`'s.
