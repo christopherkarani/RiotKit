@@ -53,17 +53,19 @@ open class RiotRequest {
     public static func get(isStatic:Bool, forURL url: String, withCompletionHandler handler: @escaping (_ serverResponse: JSON) -> Void)
      {
         /// The base URL for use
-        var requestURL = "https://\(Configuration.proxyURL)/\(RiotRequest.regionURL)"
+        //var requestURL = "https://\(Configuration.proxyURL)/\(RiotRequest.regionURL)"
+        var requestURL = "http://127.0.0.1:9090/\(RiotRequest.regionURL)"
         
         //If static, swap in the static API hostname
         if (isStatic)
         {
-            requestURL = "https://\(Configuration.proxyURL)/\(Region.getHostname(forRegion: "GLOBAL"))"
+            requestURL = "http://127.0.0.1:9090/\(Region.getHostname(forRegion: "GLOBAL"))"
         }
-        requestURL += "\(url)"
+        //Url encode the URL because of API mess.
+        requestURL += "\(url.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)"
 
         //Issue the request using `Alamofire`. Obtains a JSON response asynchronously
-        Alamofire.request(requestURL, method: .get).responseJSON { responseBody in
+        Alamofire.request(requestURL, method: .get, encoding: URLEncoding.default).responseJSON { responseBody in
             if responseBody.result.value != nil {
                 //Set the server response, to be obtained by the calling class.
                 //There is a much better way of doing this.
