@@ -21,28 +21,29 @@ open class SummonerRequest {
      
      - Returns: The summoner name as a `String`.
      */
-    private static func getSummoner(usingID id: Int, withCompletionHandler handler: @escaping (_ summoner: String) -> Void)
+    public static func getSummoner(usingID id: Int, withCompletionHandler handler: @escaping (_ summoners: [Summoner]) -> Void)
     {
         //https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/
         
-        //Sets the champion endpoint URL for the active `Region`
+        //Sets the summoner endpoint URL for the active `Region`
         let summonerURL = "/api/lol/\(Configuration.region.lowercased())/v1.4/summoner/" + String(id)
         
         RiotRequest.get(isStatic: false, forURL: summonerURL, withCompletionHandler: { (serverResponse: JSON) -> Void in
             
-            print(serverResponse)
-            handler("hello world")
-            //            let championData = serverResponse["data"]
-            //            for (championName, championBlob):(String, JSON) in championData {
-            //                //Get the champion ID
-            //                let championID = championBlob["id"]
-            //                let championData = ChampionRequest.buildChampionData(withJSON: championBlob)
-            //
-            //                //Store the name to ID mapping for later use
-            //                ChampionRequest.championMap[championName] = championID.int
-            //                //Store image filename for the champion
-            //                ChampionRequest.championDataMap[championID.int!] = championData
-            //            }
+            var summoners = [Summoner]()
+            
+            for (_, summonerData):(String, JSON) in serverResponse
+            {
+                let sum = Summoner(id: summonerData["id"].int!,
+                                   name: summonerData["name"].string!,
+                                   profileIconId: summonerData["profileIconId"].int!,
+                                   revisionDate: summonerData["revisionDate"].int!,
+                                   summonerLevel: summonerData["summonerLevel"].int!)
+                summoners.append(sum)
+                print("Summoner \(sum.name), id: \(sum.id), level: \(sum.summonerLevel)")
+            }
+            print("Returing \(summoners.count) summoners")
+            handler(summoners)
         });
     }
     
@@ -50,32 +51,31 @@ open class SummonerRequest {
      Looks up the summoner id for the specified name.
      
      - Parameters:
-     - championName: the summoner id
+        - summonerName: the summoner name
      
-     - Returns: A `Champion` struct, for the specified champion.
+     - Returns: An array of 1 or more `Summoner` structs, for the specified summoner name.
      */
-    public static func getSummoner(usingName summonerName: String, withCompletionHandler handler: @escaping (_ summoner: String) -> Void)
+    public static func getSummoner(usingName summonerName: String, withCompletionHandler handler: @escaping (_ summoners: [Summoner]) -> Void)
     {
-        //https://euw.api.pvp.net/api/lol/euw/v1.4/summoner/by-name/
-        
-        //Sets the champion endpoint URL for the active `Region`
+        //Sets the summoner endpoint URL for the active `Region`
         let summonerURL = "/api/lol/\(Configuration.region.lowercased())/v1.4/summoner/by-name/" + summonerName
         
         RiotRequest.get(isStatic: false, forURL: summonerURL, withCompletionHandler: { (serverResponse: JSON) -> Void in
             
-            print(serverResponse)
-            handler("hello world")
-//            let championData = serverResponse["data"]
-//            for (championName, championBlob):(String, JSON) in championData {
-//                //Get the champion ID
-//                let championID = championBlob["id"]
-//                let championData = ChampionRequest.buildChampionData(withJSON: championBlob)
-//                
-//                //Store the name to ID mapping for later use
-//                ChampionRequest.championMap[championName] = championID.int
-//                //Store image filename for the champion
-//                ChampionRequest.championDataMap[championID.int!] = championData
-//            }
+            var summoners = [Summoner]()
+            
+            for (_, summonerData):(String, JSON) in serverResponse
+            {
+                let sum = Summoner(id: summonerData["id"].int!,
+                                   name: summonerData["name"].string!,
+                                   profileIconId: summonerData["profileIconId"].int!,
+                                   revisionDate: summonerData["revisionDate"].int!,
+                                   summonerLevel: summonerData["summonerLevel"].int!)
+                summoners.append(sum)
+                print("Summoner \(sum.name), id: \(sum.id), level: \(sum.summonerLevel)")
+            }
+            print("Returing \(summoners.count) summoners")
+            handler(summoners)
         });
     }
     
