@@ -58,7 +58,10 @@ open class SummonerRequest {
     public static func getSummoner(usingName summonerName: String, withCompletionHandler handler: @escaping (_ summoners: [Summoner]) -> Void)
     {
         //Sets the summoner endpoint URL for the active `Region`
-        let summonerURL = "/api/lol/\(Configuration.region.lowercased())/v1.4/summoner/by-name/" + summonerName
+        //As per rito guidance, summoner names need to be URL encoded prior to issuing the request.
+        let encodedName = summonerName.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
+        
+        let summonerURL = "/api/lol/\(Configuration.region.lowercased())/v1.4/summoner/by-name/" + encodedName
         
         RiotRequest.get(isStatic: false, forURL: summonerURL, withCompletionHandler: { (serverResponse: JSON) -> Void in
             
