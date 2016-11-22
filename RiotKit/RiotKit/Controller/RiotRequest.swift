@@ -60,8 +60,6 @@ open class RiotRequest {
         {
             requestURL = "https://\(Configuration.proxyURL)/\(Region.getHostname(forRegion: "GLOBAL"))"
         }
-        //Url encode the URL because of API mess.
-        //.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
         requestURL += "\(url)"
 
         //Issue the request using `Alamofire`. Obtains a JSON response asynchronously

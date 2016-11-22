@@ -48,7 +48,6 @@ class SummonerTests: XCTestCase {
             {
                 XCTAssertNotNil(summoner.id)
                 XCTAssertNotNil(summoner.name)
-                //XCTAssertNotNil(summoner.)
             }
             
             asyncExpectation.fulfill()
