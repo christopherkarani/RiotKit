@@ -14,12 +14,12 @@ open class SummonerRequest {
     
     
     /**
-     Looks up the summoner name for the specified identifier.
+     Get a summoner struct for the specified identifier.
      
      - Parameters:
         - id: the summoner identifier
      
-     - Returns: The summoner name as a `String`.
+     - Returns: An array of 1 or more Summoner structs, for the specified summoner id.
      */
     public static func getSummoner(usingID id: Int, withCompletionHandler handler: @escaping (_ summoners: [Summoner]) -> Void)
     {
@@ -48,10 +48,15 @@ open class SummonerRequest {
     }
     
     /**
-     Looks up the summoner id for the specified name.
+     Get a summoner structs for the specified name (or names).
      
      - Parameters:
-        - summonerName: the summoner name
+        - summonerName: the summoner name or names. Please provide multiple names as a comma separated list,
+         e.g
+         ```
+         let summonerNames = ["Atherz", "Arcedants", "Durrann", "DracoRenati", "S Rated AD"]
+         let allSummoners = summonerNames.joined(separator: ",")
+         ```
      
      - Returns: An array of 1 or more `Summoner` structs, for the specified summoner name.
      */

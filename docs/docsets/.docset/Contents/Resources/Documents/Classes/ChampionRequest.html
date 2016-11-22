@@ -14,7 +14,7 @@
     <a title="ChampionRequest Class Reference"></a>
     <header>
       <div class="content-wrapper">
-        <p><a href="../index.html"> Docs</a> (95% documented)</p>
+        <p><a href="../index.html"> Docs</a> (97% documented)</p>
       </div>
     </header>
     <div class="content-wrapper">
@@ -45,21 +45,8 @@
               <li class="nav-group-task">
                 <a href="../Classes/RiotRequest.html">RiotRequest</a>
               </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Global Variables.html">Global Variables</a>
-            <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Global Variables.html#/s:v7RiotKit8apiRouteSS">apiRoute</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
-            <a href="../Functions.html">Functions</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="../Functions.html#/s:F7RiotKit7findKeyFT8forValueSi14withDictionaryGVs10DictionarySSSi__GSqSS_">findKey(forValue:withDictionary:)</a>
+                <a href="../Classes/SummonerRequest.html">SummonerRequest</a>
               </li>
             </ul>
           </li>
@@ -76,6 +63,9 @@
                 <a href="../Structs/ChampionInfo.html">ChampionInfo</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/ChampionSpell.html">ChampionSpell</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/ChampionStats.html">ChampionStats</a>
               </li>
               <li class="nav-group-task">
@@ -83,6 +73,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/PassiveSpell.html">PassiveSpell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Summoner.html">Summoner</a>
               </li>
             </ul>
           </li>
@@ -104,114 +97,6 @@
           <section class="section task-group-section">
             <div class="task-group">
               <ul>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:ZvC7RiotKit15ChampionRequest11championMapGVs10DictionarySSSi_"></a>
-                    <a name="//apple_ref/swift/Variable/championMap" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZvC7RiotKit15ChampionRequest11championMapGVs10DictionarySSSi_">championMap</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Champion mappings, name <code>String</code> -&gt; id <code>Int</code>.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">championMap</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Int</span><span class="p">]()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:ZvC7RiotKit15ChampionRequest15championDataMapGVs10DictionarySiVS_12ChampionData_"></a>
-                    <a name="//apple_ref/swift/Variable/championDataMap" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZvC7RiotKit15ChampionRequest15championDataMapGVs10DictionarySiVS_12ChampionData_">championDataMap</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Champion data mappings, id <code>Int</code> -&gt; <code><a href="../Structs/ChampionData.html">ChampionData</a></code> filename.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">championDataMap</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span> <span class="p">:</span> <span class="kt"><a href="../Structs/ChampionData.html">ChampionData</a></span><span class="p">]()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:ZvC7RiotKit15ChampionRequest9championsGVs10DictionarySiVS_8Champion_"></a>
-                    <a name="//apple_ref/swift/Variable/champions" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZvC7RiotKit15ChampionRequest9championsGVs10DictionarySiVS_8Champion_">champions</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A dictionary of <code><a href="../Structs/Champion.html">Champion</a></code> structs, using the champion id as the key.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">champions</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">:</span> <span class="kt"><a href="../Structs/Champion.html">Champion</a></span><span class="p">]()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FC7RiotKit15ChampionRequestcFT_S0_"></a>
-                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FC7RiotKit15ChampionRequestcFT_S0_">init()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Fetches the latest <code><a href="../Structs/Champion.html">Champion</a></code> set</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="nf">init</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -467,7 +352,7 @@
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-11-18)</p>
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-11-22)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
