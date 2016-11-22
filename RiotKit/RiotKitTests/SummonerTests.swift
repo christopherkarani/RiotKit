@@ -34,6 +34,7 @@ class SummonerTests: XCTestCase {
                 
                 XCTAssertEqual(summoners.count, 1)
                 XCTAssertEqual(summoners[0].name, name)
+                XCTAssertEqual(summoners[0].id, 1)
             })
         }
         

@@ -53,13 +53,12 @@ open class RiotRequest {
     public static func get(isStatic:Bool, forURL url: String, withCompletionHandler handler: @escaping (_ serverResponse: JSON) -> Void)
      {
         /// The base URL for use
-        //var requestURL = "https://\(Configuration.proxyURL)/\(RiotRequest.regionURL)"
-        var requestURL = "http://127.0.0.1:9090/\(RiotRequest.regionURL)"
+        var requestURL = "https://\(Configuration.proxyURL)/\(RiotRequest.regionURL)"
         
         //If static, swap in the static API hostname
         if (isStatic)
         {
-            requestURL = "http://127.0.0.1:9090/\(Region.getHostname(forRegion: "GLOBAL"))"
+            requestURL = "https://\(Configuration.proxyURL)/\(Region.getHostname(forRegion: "GLOBAL"))"
         }
         //Url encode the URL because of API mess.
         requestURL += "\(url.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!)"
