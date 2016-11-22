@@ -25,11 +25,29 @@ class SummonerTests: XCTestCase {
     // Test the fetching of the champion list
     func testSummonerNames() {
         let asyncExpectation = expectation(description: "Fetch summoner asynchronously")
-        SummonerRequest.getSummoner(usingName: "DracoRenati", withCompletionHandler: { (summoners: [Summoner]) -> Void in
+        
+        let summonerNames = ["Atherz", "Arcedants", "Durrann", "DracoRenati", "S Rated AD"]
+        
+        for name in summonerNames
+        {
+            SummonerRequest.getSummoner(usingName: name, withCompletionHandler: { (summoners: [Summoner]) -> Void in
+                
+                XCTAssertEqual(summoners.count, 1)
+                XCTAssertEqual(summoners[0].name, name)
+            })
+        }
+        
+        let allSummoners = summonerNames.joined(separator: ",")
+        SummonerRequest.getSummoner(usingName: allSummoners, withCompletionHandler: { (summoners: [Summoner]) -> Void in
             
-            XCTAssertEqual(summoners.count, 1)
-            print(summoners)
-
+            XCTAssertEqual(summoners.count, summonerNames.count)
+            for summoner in summoners
+            {
+                XCTAssertNotNil(summoner.id)
+                XCTAssertNotNil(summoner.name)
+                //XCTAssertNotNil(summoner.)
+            }
+            
             asyncExpectation.fulfill()
         })
         
