@@ -22,8 +22,9 @@ class SummonerTests: XCTestCase {
         super.tearDown()
     }
 
-    // Test the fetching of the champion list
-    func testSummonerNames() {
+    
+    // Test the fetching of the summoners using the name
+    func testFetchSummonerUsingName() {
         let asyncExpectation = expectation(description: "Fetch summoner asynchronously")
         
         let summonerNames = ["Atherz", "Arcedants", "Durrann", "DracoRenati", "S Rated AD"]
@@ -34,7 +35,7 @@ class SummonerTests: XCTestCase {
                 
                 XCTAssertEqual(summoners.count, 1)
                 XCTAssertEqual(summoners[0].name, name)
-                XCTAssertEqual(summoners[0].id, 1)
+                
             })
         }
         
@@ -53,6 +54,22 @@ class SummonerTests: XCTestCase {
             asyncExpectation.fulfill()
         })
         
+        waitForExpectations(timeout: 60, handler: nil)
+    }
+    
+    // Test the fetching of the summoners using the id
+    func testFetchSummonerUsingID() {
+        let asyncExpectation = expectation(description: "Fetch summoner asynchronously using ID")
+        
+        let summonerID = 39470277
+        
+        SummonerRequest.getSummoner(usingID: summonerID, withCompletionHandler: { (summoners: [Summoner]) -> Void in
+            XCTAssertEqual(summoners.count, 1)
+            XCTAssertEqual(summoners[0].id, summonerID)
+            XCTAssertEqual(summoners[0].name, "Atherz")
+            asyncExpectation.fulfill()
+        })
+
         waitForExpectations(timeout: 60, handler: nil)
     }
 }
