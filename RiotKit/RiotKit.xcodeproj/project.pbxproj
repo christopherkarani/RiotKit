@@ -16,6 +16,7 @@
 		938DDCC21DE3B3BA0021454D /* SummonerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938DDCC11DE3B3BA0021454D /* SummonerTests.swift */; };
 		938E15D01DE42CE000C02D32 /* Summoner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938E15CF1DE42CE000C02D32 /* Summoner.swift */; };
 		93A0036C1DD8A43B0092026E /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A0036B1DD8A43B0092026E /* SwiftyJSON.framework */; };
+		93A4D99D1DE6528A0005087B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4D99C1DE6528A0005087B /* Logger.swift */; };
 		93A51B2B1C99F80200F9ACA0 /* RiotKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 93A51B2A1C99F80200F9ACA0 /* RiotKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93A51B321C99F80200F9ACA0 /* RiotKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A51B271C99F80200F9ACA0 /* RiotKit.framework */; };
 		93A51B371C99F80200F9ACA0 /* RiotKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A51B361C99F80200F9ACA0 /* RiotKitTests.swift */; };
@@ -56,6 +57,7 @@
 		938DDCC11DE3B3BA0021454D /* SummonerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummonerTests.swift; sourceTree = "<group>"; };
 		938E15CF1DE42CE000C02D32 /* Summoner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Summoner.swift; sourceTree = "<group>"; };
 		93A0036B1DD8A43B0092026E /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/RiotKit-eggyogtlouakvseymwbsfrepayor/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		93A4D99C1DE6528A0005087B /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		93A51B271C99F80200F9ACA0 /* RiotKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RiotKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A51B2A1C99F80200F9ACA0 /* RiotKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RiotKit.h; sourceTree = "<group>"; };
 		93A51B2C1C99F80200F9ACA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				93EC7A141DD684C90035DF3C /* Utils.swift */,
+				93A4D99C1DE6528A0005087B /* Logger.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				B2808C311DDF544600DE1140 /* PassiveSpell.swift in Sources */,
 				93A51B481C9A02C100F9ACA0 /* Champion.swift in Sources */,
 				93A51B461C99FA4300F9ACA0 /* Region.swift in Sources */,
+				93A4D99D1DE6528A0005087B /* Logger.swift in Sources */,
 				B2808C2E1DDF538C00DE1140 /* ImageData.swift in Sources */,
 				938DDCC01DE3B1870021454D /* SummonerRequest.swift in Sources */,
 				93525FD91DCE5F7B00A946F4 /* ChampionRequest.swift in Sources */,

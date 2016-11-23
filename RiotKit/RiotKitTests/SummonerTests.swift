@@ -40,7 +40,6 @@ class SummonerTests: XCTestCase {
         }
         
         let allSummoners = summonerNames.joined(separator: ",")
-        print(allSummoners)
         SummonerRequest.getSummoner(usingName: allSummoners, withCompletionHandler: { (summoners: [Summoner]) -> Void in
             
             XCTAssertEqual(summoners.count, summonerNames.count)

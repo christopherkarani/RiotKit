@@ -43,7 +43,7 @@ open class Configuration
         set {
             if (newValue == "")
             {
-                print("You must configure a web proxy to interact with the Riot API. A proxy service has been released open source alongside RiotKit: https://git.hexplo.it/RiotKit/Singed. You should set this up on your own web server.");
+                Log.error("You must configure a web proxy to interact with the Riot API. A proxy service has been released open source alongside RiotKit: https://git.hexplo.it/RiotKit/Singed. You should set this up on your own web server.");
             }
             else
             {

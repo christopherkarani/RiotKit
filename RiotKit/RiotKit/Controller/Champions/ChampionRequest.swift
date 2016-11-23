@@ -93,12 +93,12 @@ open class ChampionRequest {
         for (championID, champData):(Int, ChampionData) in ChampionRequest.championDataMap {
             
             let championImageURL = imageCDNUrl + champData.image.full
-            //print("ID: \(championID), fileName: \(championImageURL)")
-            //print("Fetching remote image")
+            Log.debug("ID: \(championID), fileName: \(championImageURL)")
+            Log.debug("Fetching remote image")
             RiotRequest.getImage(forURL: championImageURL, withCompletionHandler: { (obtainedImage: UIImage) -> Void in
                 activeCount += 1
                 //Obtained image.
-                //print("\(championImageURL) (id: \(championID)): - \(obtainedImage)")
+                Log.debug("\(championImageURL) (id: \(championID)): - \(obtainedImage)")
                 ChampionRequest.champions[championID]?.icon = obtainedImage
                 if (activeCount as Int == count)
                 {
@@ -194,7 +194,7 @@ open class ChampionRequest {
                                 stats: stats,
                                 tags: tags,
                                 title: json_blob["title"].string!)
-        //print(data)
+        Log.debug(data)
         return data
     }
 
@@ -247,12 +247,12 @@ open class ChampionRequest {
                                                          championData: ChampionRequest.championDataMap[championID])
                     ChampionRequest.champions[championID] = championEntry
                 }
-                print("Fetched \(ChampionRequest.champions.count) champions")
+                Log.info("Fetched \(ChampionRequest.champions.count) champions")
                 if shouldFetchImages
                 {
-                    print("Fetching images")
+                    Log.info("Fetching images")
                     self.getChampionImages(withCompletionHandler: { () -> Void in
-                        print("Fetched images")
+                        Log.info("Fetched images")
                         handler()
                     })
                 }

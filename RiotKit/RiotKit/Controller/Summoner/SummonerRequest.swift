@@ -40,9 +40,9 @@ open class SummonerRequest {
                                    revisionDate: summonerData["revisionDate"].int!,
                                    summonerLevel: summonerData["summonerLevel"].int!)
                 summoners.append(sum)
-                print("Summoner \(sum.name), id: \(sum.id), level: \(sum.summonerLevel)")
+                Log.debug("Summoner \(sum.name), id: \(sum.id), level: \(sum.summonerLevel)")
             }
-            print("Returing \(summoners.count) summoners")
+            Log.debug("Returing \(summoners.count) summoners")
             handler(summoners)
         });
     }
@@ -80,9 +80,9 @@ open class SummonerRequest {
                                    revisionDate: summonerData["revisionDate"].int!,
                                    summonerLevel: summonerData["summonerLevel"].int!)
                 summoners.append(sum)
-                print("Summoner \(sum.name), id: \(sum.id), level: \(sum.summonerLevel)")
+                Log.debug("Summoner \(sum.name), id: \(sum.id), level: \(sum.summonerLevel)")
             }
-            print("Returing \(summoners.count) summoners")
+            Log.debug("Returing \(summoners.count) summoners")
             handler(summoners)
         });
     }

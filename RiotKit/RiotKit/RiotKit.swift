@@ -11,7 +11,7 @@ import Foundation
 class RiotKit {
     
     public static func configure(withProxyURL url: String) -> Void {
-        print("RiotKit configured with Proxy URL: \(url)")
+        Log.info("RiotKit configured with Proxy URL: \(url)")
         Configuration.proxyURL = url
     }
     

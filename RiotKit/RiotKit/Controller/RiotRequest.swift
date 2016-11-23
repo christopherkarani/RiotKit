@@ -31,9 +31,9 @@ open class RiotRequest {
     {
         Alamofire.request(url).responseImage { response in
             
-//            print(response.request!)
-//            print(response.response!)
-//            print(response.result)
+            Log.debug(response.request!)
+            Log.debug(response.response!)
+            Log.debug(response.result)
             
             if let image = response.result.value {
                 handler(image)
