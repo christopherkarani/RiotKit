@@ -52,7 +52,7 @@ class SummonerTests: XCTestCase {
             asyncExpectation.fulfill()
         })
         
-        waitForExpectations(timeout: 60, handler: nil)
+        waitForExpectations(timeout: TimeInterval(testTimeout), handler: nil)
     }
     
     // Test the fetching of the summoners using the id
@@ -68,6 +68,6 @@ class SummonerTests: XCTestCase {
             asyncExpectation.fulfill()
         })
 
-        waitForExpectations(timeout: 60, handler: nil)
+        waitForExpectations(timeout: TimeInterval(testTimeout), handler: nil)
     }
 }

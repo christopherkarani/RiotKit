@@ -25,6 +25,9 @@
 		93A51B461C99FA4300F9ACA0 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A51B451C99FA4300F9ACA0 /* Region.swift */; };
 		93A51B481C9A02C100F9ACA0 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A51B471C9A02C100F9ACA0 /* Champion.swift */; };
 		93B414C11DDD0C8C00C6B44C /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B414C01DDD0C8C00C6B44C /* UtilsTests.swift */; };
+		93C31C441DE77E150000DE91 /* TestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C31C431DE77E150000DE91 /* TestConfiguration.swift */; };
+		93C31C461DE77F570000DE91 /* MatchlistRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C31C451DE77F570000DE91 /* MatchlistRequest.swift */; };
+		93C31C481DE780A40000DE91 /* MatchListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C31C471DE780A40000DE91 /* MatchListTests.swift */; };
 		93EC7A151DD684C90035DF3C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EC7A141DD684C90035DF3C /* Utils.swift */; };
 		93FA32331C9DD5F40078C27D /* RegionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FA32321C9DD5F40078C27D /* RegionTests.swift */; };
 		93FA32351C9DDAF40078C27D /* ChampionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FA32341C9DDAF40078C27D /* ChampionTests.swift */; };
@@ -69,6 +72,9 @@
 		93A51B451C99FA4300F9ACA0 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		93A51B471C9A02C100F9ACA0 /* Champion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
 		93B414C01DDD0C8C00C6B44C /* UtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
+		93C31C431DE77E150000DE91 /* TestConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConfiguration.swift; sourceTree = "<group>"; };
+		93C31C451DE77F570000DE91 /* MatchlistRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchlistRequest.swift; sourceTree = "<group>"; };
+		93C31C471DE780A40000DE91 /* MatchListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchListTests.swift; sourceTree = "<group>"; };
 		93EC7A141DD684C90035DF3C /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		93FA32321C9DD5F40078C27D /* RegionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionTests.swift; sourceTree = "<group>"; };
 		93FA32341C9DDAF40078C27D /* ChampionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChampionTests.swift; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 		9352BBE01DDA6966002005F4 /* Matches */ = {
 			isa = PBXGroup;
 			children = (
+				93C31C451DE77F570000DE91 /* MatchlistRequest.swift */,
 			);
 			path = Matches;
 			sourceTree = "<group>";
@@ -284,6 +291,7 @@
 		93A51B351C99F80200F9ACA0 /* RiotKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				93C31C431DE77E150000DE91 /* TestConfiguration.swift */,
 				93A51B361C99F80200F9ACA0 /* RiotKitTests.swift */,
 				93B414C01DDD0C8C00C6B44C /* UtilsTests.swift */,
 				93FA32341C9DDAF40078C27D /* ChampionTests.swift */,
@@ -291,6 +299,7 @@
 				93FA32321C9DD5F40078C27D /* RegionTests.swift */,
 				93A51B381C99F80200F9ACA0 /* Info.plist */,
 				93FA32361C9DDB3C0078C27D /* ConfigurationTests.swift */,
+				93C31C471DE780A40000DE91 /* MatchListTests.swift */,
 			);
 			path = RiotKitTests;
 			sourceTree = "<group>";
@@ -469,6 +478,7 @@
 				93A4D99D1DE6528A0005087B /* Logger.swift in Sources */,
 				B2808C2E1DDF538C00DE1140 /* ImageData.swift in Sources */,
 				938DDCC01DE3B1870021454D /* SummonerRequest.swift in Sources */,
+				93C31C461DE77F570000DE91 /* MatchlistRequest.swift in Sources */,
 				93525FD91DCE5F7B00A946F4 /* ChampionRequest.swift in Sources */,
 				93A51B441C99F91300F9ACA0 /* Configuration.swift in Sources */,
 				93A51B421C99F8A000F9ACA0 /* RiotKit.swift in Sources */,
@@ -485,9 +495,11 @@
 				93A51B371C99F80200F9ACA0 /* RiotKitTests.swift in Sources */,
 				93FA32351C9DDAF40078C27D /* ChampionTests.swift in Sources */,
 				93FA32371C9DDB3C0078C27D /* ConfigurationTests.swift in Sources */,
+				93C31C481DE780A40000DE91 /* MatchListTests.swift in Sources */,
 				93B414C11DDD0C8C00C6B44C /* UtilsTests.swift in Sources */,
 				93FA32331C9DD5F40078C27D /* RegionTests.swift in Sources */,
 				938DDCC21DE3B3BA0021454D /* SummonerTests.swift in Sources */,
+				93C31C441DE77E150000DE91 /* TestConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

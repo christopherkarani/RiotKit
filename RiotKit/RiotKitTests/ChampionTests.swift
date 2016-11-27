@@ -45,7 +45,7 @@ class ChampionTests: XCTestCase {
             asyncExpectation.fulfill()
         })
         
-        waitForExpectations(timeout: 60, handler: nil)
+        waitForExpectations(timeout: TimeInterval(testTimeout), handler: nil)
     }
     
     // Test the fetching of the champion images
@@ -65,6 +65,6 @@ class ChampionTests: XCTestCase {
             asyncExpectation.fulfill()
         })
         
-        waitForExpectations(timeout: 60, handler: nil)
+        waitForExpectations(timeout: TimeInterval(testTimeout), handler: nil)
     }
 }
