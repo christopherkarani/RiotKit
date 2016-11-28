@@ -30,8 +30,8 @@ class MatchListTests: XCTestCase {
         let asyncExpectation = expectation(description: "Fetch summoner asynchronously")
         let summonerID = 39470277
         
-       MatchlistRequest.getMatchlist(forSummoner: summonerID,  withCompletionHandler: { (summoners: [String]) -> Void in
-            XCTAssertEqual(summoners.count, 1)
+       MatchlistRequest.getMatchlist(forSummoner: summonerID,  withCompletionHandler: { (matchEntries: [MatchEntry]) -> Void in
+            XCTAssertEqual(matchEntries.count, 1)
             asyncExpectation.fulfill()
         })
         
