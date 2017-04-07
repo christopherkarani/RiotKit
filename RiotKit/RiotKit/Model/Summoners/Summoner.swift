@@ -20,4 +20,6 @@ public struct Summoner {
     public let revisionDate: Int;
     /// The level (1-30) of the `Summoner
     public let summonerLevel: Int;
+    // Rank of summoner
+    //public let summonerRank: Int;
 }

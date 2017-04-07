@@ -24,16 +24,16 @@ class CurrentMatchTests: XCTestCase {
     }
     
     
-    // Test the fetching of the summoners using the name
-    func testFetchSummonerUsingName() {
-        let asyncExpectation = expectation(description: "Fetch summoner asynchronously")
-        let summonerID = 39470277
-        
-        CurrentMatchRequest.getCurrentMatch(forSummoner: summonerID,  withCompletionHandler: { (matchEntries: [MatchEntry]) -> Void in
-            XCTAssertGreaterThan(matchEntries.count, 1)
-            asyncExpectation.fulfill()
-        })
-        
-        waitForExpectations(timeout: TimeInterval(testTimeout), handler: nil)
-    }
+//    // Test the fetching of the summoners using the name
+//    func testFetchSummonerUsingName() {
+//        let asyncExpectation = expectation(description: "Fetch summoner asynchronously")
+//        let summonerID = 39470277
+//        
+//        CurrentMatchRequest.getCurrentMatch(forSummoner: summonerID,  withCompletionHandler: { (matchEntries: [MatchEntry]) -> Void in
+//            XCTAssertGreaterThan(matchEntries.count, 1)
+//            asyncExpectation.fulfill()
+//        })
+//        
+//        waitForExpectations(timeout: TimeInterval(testTimeout), handler: nil)
+//    }
 }

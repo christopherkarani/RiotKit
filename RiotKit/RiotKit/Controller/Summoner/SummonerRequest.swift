@@ -13,6 +13,31 @@ import SwiftyJSON
 open class SummonerRequest {
     
     
+    public static func getLeagueForSummoner(usingID id: Int, withCompletionHandler handler: @escaping (_ summoners: String) -> Void)
+    {
+        //https://euw.api.riotgames.com/api/lol/EUW/v2.5/league/by-summoner/
+        
+        //Sets the summoner endpoint URL for the active `Region`
+        let leagueURL = "/api/lol/\(Configuration.region.lowercased())/v2.5/league/by-summoner/" + String(id)
+        
+        RiotRequest.get(isStatic: false, forURL: leagueURL, withCompletionHandler: { (serverResponse: JSON) -> Void in
+            
+            var player_id:String = ""
+            
+            let entries:JSON = serverResponse[String(id)]
+            Log.info(entries);
+            for (_, leagueData):(String, JSON) in entries
+            {
+                
+                player_id = leagueData["playerOrTeamId"].string!
+                Log.info("Player id: \(player_id)")
+            }
+            handler(player_id)
+        });
+
+    }
+    
+    
     /**
      Get a summoner struct for the specified identifier.
      
@@ -34,16 +59,21 @@ open class SummonerRequest {
             
             for (_, summonerData):(String, JSON) in serverResponse
             {
-                let sum = Summoner(id: summonerData["id"].int!,
-                                   name: summonerData["name"].string!,
-                                   profileIconId: summonerData["profileIconId"].int!,
-                                   revisionDate: summonerData["revisionDate"].int!,
-                                   summonerLevel: summonerData["summonerLevel"].int!)
-                summoners.append(sum)
-                Log.debug("Summoner \(sum.name), id: \(sum.id), level: \(sum.summonerLevel)")
+                // get league data
+                getLeagueForSummoner(usingID: summonerData["id"].int!, withCompletionHandler: { (league: String) -> Void in
+                    Log.debug(league);
+                    let sum = Summoner(id: summonerData["id"].int!,
+                                       name: summonerData["name"].string!,
+                                       profileIconId: summonerData["profileIconId"].int!,
+                                       revisionDate: summonerData["revisionDate"].int!,
+                                       summonerLevel: summonerData["summonerLevel"].int!)
+                    summoners.append(sum)
+                    Log.debug("Summoner \(sum.name), id: \(sum.id), level: \(sum.summonerLevel)")
+                    Log.debug("Returing \(summoners.count) summoners")
+                    handler(summoners)
+                });
             }
-            Log.debug("Returing \(summoners.count) summoners")
-            handler(summoners)
+            
         });
     }
     

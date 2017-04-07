@@ -26,6 +26,7 @@
 		93A51B461C99FA4300F9ACA0 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A51B451C99FA4300F9ACA0 /* Region.swift */; };
 		93A51B481C9A02C100F9ACA0 /* Champion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A51B471C9A02C100F9ACA0 /* Champion.swift */; };
 		93B414C11DDD0C8C00C6B44C /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B414C01DDD0C8C00C6B44C /* UtilsTests.swift */; };
+		93BEA71F1E98522700FA329D /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BEA71E1E98522700FA329D /* League.swift */; };
 		93C31C441DE77E150000DE91 /* TestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C31C431DE77E150000DE91 /* TestConfiguration.swift */; };
 		93C31C461DE77F570000DE91 /* MatchlistRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C31C451DE77F570000DE91 /* MatchlistRequest.swift */; };
 		93C31C481DE780A40000DE91 /* MatchListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C31C471DE780A40000DE91 /* MatchListTests.swift */; };
@@ -76,6 +77,7 @@
 		93A51B451C99FA4300F9ACA0 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		93A51B471C9A02C100F9ACA0 /* Champion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Champion.swift; sourceTree = "<group>"; };
 		93B414C01DDD0C8C00C6B44C /* UtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
+		93BEA71E1E98522700FA329D /* League.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		93C31C431DE77E150000DE91 /* TestConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConfiguration.swift; sourceTree = "<group>"; };
 		93C31C451DE77F570000DE91 /* MatchlistRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchlistRequest.swift; sourceTree = "<group>"; };
 		93C31C471DE780A40000DE91 /* MatchListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchListTests.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 		9352BBE91DDA6A18002005F4 /* Leagues */ = {
 			isa = PBXGroup;
 			children = (
+				93BEA71E1E98522700FA329D /* League.swift */,
 			);
 			path = Leagues;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				B2808C2A1DDF511600DE1140 /* ChampionData.swift in Sources */,
 				93EC7A151DD684C90035DF3C /* Utils.swift in Sources */,
 				9366BA501DECC92500C1D5C4 /* MatchEntry.swift in Sources */,
+				93BEA71F1E98522700FA329D /* League.swift in Sources */,
 				B2808C2C1DDF531400DE1140 /* ChampionInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
