@@ -84,7 +84,7 @@ open class ChampionRequest {
     public static func getChampionImages(withCompletionHandler handler: @escaping () -> Void)
     {
         // TODO - Fix hardcoded version/URL
-        let latestGameVersion = "6.22.1"
+        let latestGameVersion = "7.7.1"
         // TODO - All URL routing should be dynamic and managed centrally.
         let imageCDNUrl = "https://ddragon.leagueoflegends.com/cdn/\(latestGameVersion)/img/champion/"
         
