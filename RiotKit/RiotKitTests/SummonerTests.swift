@@ -12,7 +12,7 @@ import XCTest
 class SummonerTests: XCTestCase {
     override func setUp() {
         super.setUp()
-        RiotKit.configure(withProxyURL: "singed.riotkit.xyz")
+        RiotKit.configure(withProxyURL: "staging-singed.riotkit.xyz")
         Configuration.region = "EUW"
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -27,7 +27,7 @@ class SummonerTests: XCTestCase {
     func testFetchSummonerUsingName() {
         let asyncExpectation = expectation(description: "Fetch summoner asynchronously")
         
-        let summonerNames = ["Atherz", "Arcedants", "Durrann", "DracoRenati", "S Rated AD"]
+        let summonerNames = ["Atherz", "Arcedants", "Durrann", "DracoRenati", "t3rminalV"]
         
         for name in summonerNames
         {

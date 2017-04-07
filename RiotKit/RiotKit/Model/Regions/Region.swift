@@ -15,7 +15,7 @@ open class Region {
     
     /// The base URL
     /// https://developer.riotgames.com/docs/regional-endpoints
-    internal static var hostString = "api.pvp.net";
+    internal static var hostString = "api.riotgames.com";
     
     /// Maps the region to platform ID
     /// https://developer.riotgames.com/docs/regional-endpoints

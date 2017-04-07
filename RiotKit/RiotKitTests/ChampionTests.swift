@@ -14,7 +14,7 @@ class ChampionTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        RiotKit.configure(withProxyURL: "singed.riotkit.xyz")
+        RiotKit.configure(withProxyURL: "staging-singed.riotkit.xyz")
         Configuration.region = "EUW"
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }

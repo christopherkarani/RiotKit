@@ -22,18 +22,18 @@ class RegionTests: XCTestCase {
     }
     
     func testRegionHostNameGeneration() {
-        XCTAssertEqual(Region.getHostname(forRegion: "BR"), "br.api.pvp.net");
-        XCTAssertEqual(Region.getHostname(forRegion: "EUNE"), "eune.api.pvp.net");
-        XCTAssertEqual(Region.getHostname(forRegion: "EUW"), "euw.api.pvp.net");
-        XCTAssertEqual(Region.getHostname(forRegion: "KR"), "kr.api.pvp.net");
-        XCTAssertEqual(Region.getHostname(forRegion: "LAN"), "lan.api.pvp.net");
-        XCTAssertEqual(Region.getHostname(forRegion: "LAS"), "las.api.pvp.net");
-        XCTAssertEqual(Region.getHostname(forRegion: "NA"), "na.api.pvp.net");
-        XCTAssertEqual(Region.getHostname(forRegion: "OCE"), "oce.api.pvp.net");
-        XCTAssertEqual(Region.getHostname(forRegion: "TR"), "tr.api.pvp.net");
-        XCTAssertEqual(Region.getHostname(forRegion: "RU"), "ru.api.pvp.net");
-        XCTAssertEqual(Region.getHostname(forRegion: "PBE"), "pbe.api.pvp.net");
-        XCTAssertEqual(Region.getHostname(forRegion: "GLOBAL"), "global.api.pvp.net");
+        XCTAssertEqual(Region.getHostname(forRegion: "BR"), "br.api.riotgames.com");
+        XCTAssertEqual(Region.getHostname(forRegion: "EUNE"), "eune.api.riotgames.com");
+        XCTAssertEqual(Region.getHostname(forRegion: "EUW"), "euw.api.riotgames.com");
+        XCTAssertEqual(Region.getHostname(forRegion: "KR"), "kr.api.riotgames.com");
+        XCTAssertEqual(Region.getHostname(forRegion: "LAN"), "lan.api.riotgames.com");
+        XCTAssertEqual(Region.getHostname(forRegion: "LAS"), "las.api.riotgames.com");
+        XCTAssertEqual(Region.getHostname(forRegion: "NA"), "na.api.riotgames.com");
+        XCTAssertEqual(Region.getHostname(forRegion: "OCE"), "oce.api.riotgames.com");
+        XCTAssertEqual(Region.getHostname(forRegion: "TR"), "tr.api.riotgames.com");
+        XCTAssertEqual(Region.getHostname(forRegion: "RU"), "ru.api.riotgames.com");
+        XCTAssertEqual(Region.getHostname(forRegion: "PBE"), "pbe.api.riotgames.com");
+        XCTAssertEqual(Region.getHostname(forRegion: "GLOBAL"), "global.api.riotgames.com");
     }
     
     func testGetRegionMap() {

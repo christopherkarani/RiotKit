@@ -1,17 +1,16 @@
 //
-//  MatchListTests.swift
-//  RiotKit
+//  CurrentMatchTests.swift
+//  Pods
 //
-//  Created by Grant Douglas on 24/11/2016.
-//  Copyright © 2016 Reconditorium Ltd. All rights reserved.
+//  Created by Grant Douglas on 15/12/2016.
+//
 //
 
 import Foundation
-
 import XCTest
 @testable import RiotKit
 
-class MatchListTests: XCTestCase {
+class CurrentMatchTests: XCTestCase {
     override func setUp() {
         super.setUp()
         RiotKit.configure(withProxyURL: "staging-singed.riotkit.xyz")
@@ -30,7 +29,7 @@ class MatchListTests: XCTestCase {
         let asyncExpectation = expectation(description: "Fetch summoner asynchronously")
         let summonerID = 39470277
         
-       MatchlistRequest.getMatchlist(forSummoner: summonerID,  withCompletionHandler: { (matchEntries: [MatchEntry]) -> Void in
+        CurrentMatchRequest.getCurrentMatch(forSummoner: summonerID,  withCompletionHandler: { (matchEntries: [MatchEntry]) -> Void in
             XCTAssertGreaterThan(matchEntries.count, 1)
             asyncExpectation.fulfill()
         })
